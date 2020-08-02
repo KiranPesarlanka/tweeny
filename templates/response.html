@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Teeny Weeny</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>#link { color: #FFFFFF; }</style>
+</head>
+<body>
+
+
+<body style="background-color:#454545;">
+
+    </br>
+<div class="container" >
+  <div>
+      <h1  style="color:white;"> <a id="link" href="/">Teeny Weeny</a></h1>   
+    <p style="color:white;">We are here for creating short urls for you</p>
+  </div>
+
+</div>
+</br>
+</br>
+<div class="container">
+<form action="/", method="POST">
+    <div class="form-group" >
+
+      <input type="url" class="form-control" id="url" placeholder="Enter URL" name="url">
+    </div>
+    <div>
+    <input type="submit" class="btn btn-primary"></button>
+    </div>
+  </form>
+</div>
+</br>
+</br>
+<div class="container">
+<div class="jumbotron">
+<h4 > {{ msg }}</h4>
+<h6> <a href="{{ url }}" target="_blank">{{ url }} </a></h6>
+</div>
+</div>
+</body>
+</html>
+
+
